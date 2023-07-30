@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Form</title>
+</head>
+ <h1>EBD Excel Upload Form </h1>
+<body>
+
+  <div ng-controller="FormController">
+    <form>
+      <input type="file" ng-model="fileData" /><br>
+      <button ng-click="saveFile()">Save</button>
+      <button ng-click="submitFile()">Submit</button>
+    </form>
+  </div>
+
+  <!-- Include AngularJS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <!-- Include your custom script -->
+  <script src="app.js"></script>
+  <link rel="stylesheet" ng-href="styles.css">
+</body>
+</html>
